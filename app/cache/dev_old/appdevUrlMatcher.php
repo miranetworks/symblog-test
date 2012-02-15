@@ -169,12 +169,12 @@ class appdevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
         not_BloggerBlogBundle_contact:
 
         // BloggerBlogBundle_blog_show
-        if (preg_match('#^/(?P<id>\\d+)$#xs', $pathinfo, $matches)) {
+        if (preg_match('#^/(?P<id>\\d+)/(?P<slug>[^/]+?)(?:/(?P<comments>[^/]+?))?$#xs', $pathinfo, $matches)) {
             if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
                 $allow = array_merge($allow, array('GET', 'HEAD'));
                 goto not_BloggerBlogBundle_blog_show;
             }
-            return array_merge($this->mergeDefaults($matches, array (  '_controller' => 'Blogger\\BlogBundle\\Controller\\BlogController::showAction',)), array('_route' => 'BloggerBlogBundle_blog_show'));
+            return array_merge($this->mergeDefaults($matches, array (  '_controller' => 'Blogger\\BlogBundle\\Controller\\BlogController::showAction',  'comments' => true,)), array('_route' => 'BloggerBlogBundle_blog_show'));
         }
         not_BloggerBlogBundle_blog_show:
 

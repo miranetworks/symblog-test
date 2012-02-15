@@ -62,13 +62,18 @@ class __TwigTemplate_241f8879a7dc816579716b572b93030b extends Twig_Template
 
     <section class=\"comments\" id=\"comments\">
         <section class=\"previous-comments\">
-            <h3>Add Comment</h3>
+            <h3>Comments</h3>
             ";
         // line 21
         $this->env->loadTemplate("BloggerBlogBundle:Comment:index.html.twig")->display(array_merge($context, array("comments" => $this->getContext($context, "comments"))));
         // line 22
-        echo "            ";
-        // line 23
+        echo "
+
+            <h3>Add Comment</h3>
+            ";
+        // line 25
+        echo $this->env->getExtension('actions')->renderAction("BloggerBlogBundle:Comment:new", array("blog_id" => $this->getAttribute($this->getContext($context, "blog"), "id")), array());
+        // line 26
         echo "        </section>
     </section>
 ";

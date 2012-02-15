@@ -23,4 +23,5 @@ assetic:
     use_controller: true
 
 swiftmailer:
-    delivery_address:  helloises@pagesalive.co.za
+    delivery_address:  helloises@miranetworks.net
+

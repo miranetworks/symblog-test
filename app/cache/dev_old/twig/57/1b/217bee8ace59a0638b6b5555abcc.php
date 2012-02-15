@@ -37,7 +37,7 @@ class __TwigTemplate_571b217bee8ace59a0638b6b5555abcc extends Twig_Template
         ";
         // line 9
         $this->displayBlock('stylesheets', $context, $blocks);
-        // line 14
+        // line 19
         echo "        <link rel=\"shortcut icon\" href=\"";
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("favicon.ico"), "html", null, true);
         echo "\" />
@@ -48,18 +48,18 @@ class __TwigTemplate_571b217bee8ace59a0638b6b5555abcc extends Twig_Template
             <header id=\"header\">
                 <div class=\"top\">
                     ";
-        // line 21
+        // line 26
         $this->displayBlock('navigation', $context, $blocks);
-        // line 30
+        // line 35
         echo "                </div>
 
                 <hgroup>
                     <h2>";
-        // line 33
+        // line 38
         $this->displayBlock('blog_title', $context, $blocks);
         echo "</h2>
                     <h3>";
-        // line 34
+        // line 39
         $this->displayBlock('blog_tagline', $context, $blocks);
         echo "</h3>
                 </hgroup>
@@ -67,29 +67,29 @@ class __TwigTemplate_571b217bee8ace59a0638b6b5555abcc extends Twig_Template
 
             <section class=\"main-col\">
                 ";
-        // line 39
+        // line 44
         $this->displayBlock('body', $context, $blocks);
-        // line 40
+        // line 45
         echo "            </section>
             <aside class=\"sidebar\">
                 ";
-        // line 42
+        // line 47
         $this->displayBlock('sidebar', $context, $blocks);
-        // line 43
+        // line 48
         echo "            </aside>
 
             <div id=\"footer\">
                 ";
-        // line 46
+        // line 51
         $this->displayBlock('footer', $context, $blocks);
-        // line 49
+        // line 54
         echo "            </div>
         </section>
 
         ";
-        // line 52
+        // line 57
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 53
+        // line 58
         echo "    </body>
 </html>
 ";
@@ -107,29 +107,93 @@ class __TwigTemplate_571b217bee8ace59a0638b6b5555abcc extends Twig_Template
         // line 10
         echo "            <link href='http://fonts.googleapis.com/css?family=Irish+Grover' rel='stylesheet' type='text/css'>
             <link href='http://fonts.googleapis.com/css?family=La+Belle+Aurore' rel='stylesheet' type='text/css'>
-            <link href=\"";
+            ";
         // line 12
-        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("css/screen.css"), "html", null, true);
-        echo "\" type=\"text/css\" rel=\"stylesheet\" />
-        ";
+        if (isset($context['assetic']['debug']) && $context['assetic']['debug']) {
+            // asset "dd41a20_0"
+            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_dd41a20_0") : $this->env->getExtension('assets')->getAssetUrl("_controller/css/dd41a20_part_1_51c56cc_1.css");
+            // line 16
+            echo "            <link href=\"";
+            echo twig_escape_filter($this->env, $this->getContext($context, "asset_url"), "html", null, true);
+            echo "\" rel=\"stylesheet\" media=\"screen\" />
+            ";
+            // asset "dd41a20_1"
+            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_dd41a20_1") : $this->env->getExtension('assets')->getAssetUrl("_controller/css/dd41a20_part_1_51c56cc_part_1_blogger_1_2.css");
+            echo "            <link href=\"";
+            echo twig_escape_filter($this->env, $this->getContext($context, "asset_url"), "html", null, true);
+            echo "\" rel=\"stylesheet\" media=\"screen\" />
+            ";
+            // asset "dd41a20_2"
+            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_dd41a20_2") : $this->env->getExtension('assets')->getAssetUrl("_controller/css/dd41a20_part_1_51c56cc_part_1_blogger_part_1_blog_1_2_3.css");
+            echo "            <link href=\"";
+            echo twig_escape_filter($this->env, $this->getContext($context, "asset_url"), "html", null, true);
+            echo "\" rel=\"stylesheet\" media=\"screen\" />
+            ";
+            // asset "dd41a20_3"
+            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_dd41a20_3") : $this->env->getExtension('assets')->getAssetUrl("_controller/css/dd41a20_part_1_51c56cc_part_1_blogger_part_1_sidebar_2_3_4.css");
+            echo "            <link href=\"";
+            echo twig_escape_filter($this->env, $this->getContext($context, "asset_url"), "html", null, true);
+            echo "\" rel=\"stylesheet\" media=\"screen\" />
+            ";
+            // asset "dd41a20_4"
+            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_dd41a20_4") : $this->env->getExtension('assets')->getAssetUrl("_controller/css/dd41a20_part_1_51c56cc_part_1_screen_4_5.css");
+            echo "            <link href=\"";
+            echo twig_escape_filter($this->env, $this->getContext($context, "asset_url"), "html", null, true);
+            echo "\" rel=\"stylesheet\" media=\"screen\" />
+            ";
+            // asset "dd41a20_5"
+            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_dd41a20_5") : $this->env->getExtension('assets')->getAssetUrl("_controller/css/dd41a20_part_1_blogger_6.css");
+            echo "            <link href=\"";
+            echo twig_escape_filter($this->env, $this->getContext($context, "asset_url"), "html", null, true);
+            echo "\" rel=\"stylesheet\" media=\"screen\" />
+            ";
+            // asset "dd41a20_6"
+            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_dd41a20_6") : $this->env->getExtension('assets')->getAssetUrl("_controller/css/dd41a20_part_1_blogger_part_1_blog_1_7.css");
+            echo "            <link href=\"";
+            echo twig_escape_filter($this->env, $this->getContext($context, "asset_url"), "html", null, true);
+            echo "\" rel=\"stylesheet\" media=\"screen\" />
+            ";
+            // asset "dd41a20_7"
+            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_dd41a20_7") : $this->env->getExtension('assets')->getAssetUrl("_controller/css/dd41a20_part_1_blogger_part_1_sidebar_2_8.css");
+            echo "            <link href=\"";
+            echo twig_escape_filter($this->env, $this->getContext($context, "asset_url"), "html", null, true);
+            echo "\" rel=\"stylesheet\" media=\"screen\" />
+            ";
+            // asset "dd41a20_8"
+            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_dd41a20_8") : $this->env->getExtension('assets')->getAssetUrl("_controller/css/dd41a20_part_1_screen_9.css");
+            echo "            <link href=\"";
+            echo twig_escape_filter($this->env, $this->getContext($context, "asset_url"), "html", null, true);
+            echo "\" rel=\"stylesheet\" media=\"screen\" />
+            ";
+        } else {
+            // asset "dd41a20"
+            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_dd41a20") : $this->env->getExtension('assets')->getAssetUrl("_controller/css/dd41a20.css");
+            echo "            <link href=\"";
+            echo twig_escape_filter($this->env, $this->getContext($context, "asset_url"), "html", null, true);
+            echo "\" rel=\"stylesheet\" media=\"screen\" />
+            ";
+        }
+        unset($context["asset_url"]);
+        // line 18
+        echo "        ";
     }
 
-    // line 21
+    // line 26
     public function block_navigation($context, array $blocks = array())
     {
-        // line 22
+        // line 27
         echo "                        <nav>
                             <ul class=\"navigation\">
                                 <li><a href=\"";
-        // line 24
+        // line 29
         echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("BloggerBlogBundle_homepage"), "html", null, true);
         echo "\">Home</a></li>
                                 <li><a href=\"";
-        // line 25
+        // line 30
         echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("BloggerBlogBundle_about"), "html", null, true);
         echo "\">About</a></li>
                                 <li><a href=\"";
-        // line 26
+        // line 31
         echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("BloggerBlogBundle_contact"), "html", null, true);
         echo "\">Contact</a></li>
                             </ul>
@@ -137,7 +201,7 @@ class __TwigTemplate_571b217bee8ace59a0638b6b5555abcc extends Twig_Template
                     ";
     }
 
-    // line 33
+    // line 38
     public function block_blog_title($context, array $blocks = array())
     {
         echo "<a href=\"";
@@ -145,7 +209,7 @@ class __TwigTemplate_571b217bee8ace59a0638b6b5555abcc extends Twig_Template
         echo "\">symblog</a>";
     }
 
-    // line 34
+    // line 39
     public function block_blog_tagline($context, array $blocks = array())
     {
         echo "<a href=\"";
@@ -153,25 +217,25 @@ class __TwigTemplate_571b217bee8ace59a0638b6b5555abcc extends Twig_Template
         echo "\">creating a blog in Symfony2</a>";
     }
 
-    // line 39
+    // line 44
     public function block_body($context, array $blocks = array())
     {
     }
 
-    // line 42
+    // line 47
     public function block_sidebar($context, array $blocks = array())
     {
     }
 
-    // line 46
+    // line 51
     public function block_footer($context, array $blocks = array())
     {
-        // line 47
+        // line 52
         echo "                    Symfony2 blog tutorial - created by <a href=\"https://github.com/dsyph3r\">dsyph3r</a>
                 ";
     }
 
-    // line 52
+    // line 57
     public function block_javascripts($context, array $blocks = array())
     {
     }

@@ -36,6 +36,18 @@ class BloggerBlogBundleEntityBlogProxy extends \Blogger\BlogBundle\Entity\Blog i
     }
     
     
+    public function __toString()
+    {
+        $this->__load();
+        return parent::__toString();
+    }
+
+    public function slugify($text)
+    {
+        $this->__load();
+        return parent::slugify($text);
+    }
+
     public function setUpdatedValue()
     {
         $this->__load();
@@ -132,10 +144,34 @@ class BloggerBlogBundleEntityBlogProxy extends \Blogger\BlogBundle\Entity\Blog i
         return parent::getUpdated();
     }
 
+    public function addComment(\Blogger\BlogBundle\Entity\Comment $comments)
+    {
+        $this->__load();
+        return parent::addComment($comments);
+    }
+
+    public function getComments()
+    {
+        $this->__load();
+        return parent::getComments();
+    }
+
+    public function setSlug($slug)
+    {
+        $this->__load();
+        return parent::setSlug($slug);
+    }
+
+    public function getSlug()
+    {
+        $this->__load();
+        return parent::getSlug();
+    }
+
 
     public function __sleep()
     {
-        return array('__isInitialized__', 'id', 'title', 'author', 'blog', 'image', 'tags', 'created', 'updated');
+        return array('__isInitialized__', 'id', 'title', 'slug', 'author', 'blog', 'image', 'tags', 'comments', 'created', 'updated');
     }
 
     public function __clone()
