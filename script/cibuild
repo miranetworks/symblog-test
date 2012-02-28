@@ -8,15 +8,6 @@
 
 
     echo "running cibuild to test"
- 
-    $coverage = new PHP_CodeCoverage;
-    $coverage->start('test/phpunit/unit/strtolowerTest.php');
-    $coverage->stop();
-
-    $writer = new PHP_CodeCoverage_Report_Clover;
-    $writer->process($coverage, 'phpunit-report/clover.xml');
-
-    $writer = new PHP_CodeCoverage_Report_HTML;
-    $writer->process($coverage, 'phpunit-report/code-coverage-report');
-
+    phpunit -c app
+  
 exit 0
