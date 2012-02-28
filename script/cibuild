@@ -1,8 +1,10 @@
-#!/bin/sh       
+#!/bin/sh
+
+#
 # This script file is the entry point to ci.miranetworks.net build/test process.
+#
 # It is executed by jenkins, from the root directory
 #
 
-echo "test cibuild script hello"
+phpunit -c app
 
-exit 0
